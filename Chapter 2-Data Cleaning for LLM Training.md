@@ -1,6 +1,4 @@
-Certainly! I'll extract all the Python code from the document and organize it by section number. Here's the compiled code:
-
-2.1 Understanding the importance of clean data:
+## 2.1 Understanding the importance of clean data
 
 ```python
 import torch
@@ -27,7 +25,7 @@ print(f"Clean text perplexity: {clean_perplexity:.2f}")
 print(f"Noisy text perplexity: {noisy_perplexity:.2f}")
 ```
 
-2.2 Common data quality issues in language datasets:
+## 2.2 Common data quality issues in language datasets
 
 ```python
 def analyze_text_quality(text):
@@ -55,7 +53,7 @@ quality_report = analyze_text_quality(text)
 print(quality_report)
 ```
 
-2.3 Text preprocessing techniques for LLMs:
+## 2.3 Text preprocessing techniques for LLMs
 
 ```python
 def preprocess_text(text):
@@ -90,7 +88,7 @@ print(f"Original: {raw_text}")
 print(f"Preprocessed: {cleaned_text}")
 ```
 
-2.4 Handling multilingual and code-mixed data:
+## 2.4 Handling multilingual and code-mixed data
 
 ```python
 def handle_multilingual_text(text):
@@ -129,7 +127,7 @@ for text in texts:
     print(f"Tokens: {result['tokens']}\n")
 ```
 
-2.5 Deduplication strategies for large text corpora:
+## 2.5 Deduplication strategies for large text corpora
 
 ```python
 def deduplicate_corpus(corpus, similarity_threshold=0.9):
@@ -168,7 +166,7 @@ for doc in deduplicated:
     print(f"- {doc}")
 ```
 
-2.6 Automated data cleaning pipelines:
+## 2.6 Automated data cleaning pipelines
 
 ```python
 class DataCleaningPipeline:
@@ -223,7 +221,7 @@ pipeline = DataCleaningPipeline()
 pipeline.clean('input_data.csv', 'cleaned_data.csv')
 ```
 
-2.7 Data validation and quality assurance:
+## 2.7 Data validation and quality assurance
 
 ```python
 def validate_cleaned_data(file_path, sample_size=100):
@@ -269,5 +267,3 @@ def validate_cleaned_data(file_path, sample_size=100):
 # Example usage
 validate_cleaned_data('cleaned_data.csv')
 ```
-
-These code snippets cover all the Python code examples provided in the document, organized by their respective section numbers.
